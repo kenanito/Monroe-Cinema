@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menuFood.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>EAT & DRINK</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <a href="/index.html">
+                <img id="monroe" src="/Images/monroe.png" width="200px" height="65px" alt="">
+            </a>
+
+            <div onclick="clickBurger()" class="section">
+                <a href="#" class="menu-btn">
+                    <span class="stick"></span>
+                </a>
+            </div>
+        </div>
+        <nav role='navigation'>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a style="text-decoration: none;" href="/index.html">
+                        <li onmouseover="onhover1()" onmouseout="nohover1()">Premiers</li>
+                        <span id="stick1"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Food/menuFood.html">
+                        <li onmouseover="onhover2()" onmouseout="nohover2()">Eat & Drink</li>
+                        <span id="stick2"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Rules/index.html">
+                        <li onmouseover="onhover3()" onmouseout="nohover3()">Rules</li>
+                        <span id="stick3"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/AboutUs/index.html">
+                        <li onmouseover="onhover4()" onmouseout="nohover4()">About us</li>
+                        <span id="stick4"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Login/index.html">
+                        <li>
+                            <p class="fas fa-user-alt"></p> Login
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <header class="bg-img">
+        <div id="food-drink-links">
+            <div id="food-links-inner">
+                <a onclick="document.getElementById('food').style.display='block'" style="width:auto;" href="#" class="food-link">
+                    <div class="food-icon"></div>
+                </a>
+                <div id="food" class="modal">
+                    <form class="modal-content animate" method="post">
+                        <div class="container-food">
+                            <span onclick="document.getElementById('food').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        </div>
+                        <div class="menu__foods">
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5aec6190a13d0_42634821.JPG" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Classic Popcorn</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5c385b40eb9e3_14683660.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Yami-Korn</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5d5cc0fd29b87_78406679.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Nacho</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5aec61911094f_33692611.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Saharas</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" style="height:180px; width: 200px;" class="card__img" src="https://cdm.kz/public/products/slides/5d553ceb20e39_84490030.JPG" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Fruit Chips</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5d5bc7eeda35a_68223438.JPG" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Chips Pringles</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5d5bd3e7cc1ba_62842285.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Marielade</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5d553da984b84_25704358.JPG" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Lollipops</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5d553bfd9739b_22361941.JPG" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Fruit & Nut Bars</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5d553cbb4168b_85840150.JPG" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Fruit Strips</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5d5bc86c6db95_16999854.JPG" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Chips</a>
+                            </div>
+
+                            <div class="menu__card">
+                                <img style="height:180px; width: 200px; border-radius: 5px;" class="card__img" src="https://cdm.kz/public/products/slides/5d553e754bf01_50832990.JPG" alt="gam2">
+
+                                <a style="font-size: 20px; color: white" href="#" class="card__title">Paste</a>
+                            </div>
+
+                        </div>
+                </div>
+                </form>
+            </div>
+
+            <div class="drink-links-inner">
+                <a onclick="document.getElementById('drink').style.display='block'" style="width:auto;" href="#" class="drink-link">
+                    <div class="drink-icon"></div>
+                </a>
+                <div id="drink" class="modal">
+                    <form class="modal-content animate" method="post">
+                        <div class="container-drink">
+                            <span onclick="document.getElementById('drink').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        </div>
+                        <div class="menu__drinks">
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://cdm.kz/public/products/slides/5c418942f3775_53640628.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Coca-Cola</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://cdm.kz/public/products/slides/5c41891db8bd8_82012287.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Sprite</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://cdm.kz/public/products/slides/5c4188f045c06_92831622.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Fanta</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://cdm.kz/public/products/slides/5c41748b2c0c9_88993989.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Fuse Tea</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" style="height:180px; width: 200px;" class="card__img" src="https://cdm.kz/public/products/slides/5c38621f4a69e_44462428.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Piko Apple</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://cdm.kz/public/products/slides/5c41882f0c368_77166043.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Slash</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://www.aicr.org/wp-content/uploads/2020/06/peppermint-tea-on-teacup-1417945-1200x826.jpg.webp" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Tea</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://cdm.kz/public/products/slides/5c385bead860d_89204993.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Bon Aqua</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://cdm.kz/public/products/slides/5c32420c96de0_67722485.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Red Bull</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://cdm.kz/public/products/slides/5d5cc0ca2cb89_45630406.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Energetic Drinks</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Gennadiy,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1469536151/snru9aly8ahhwwr5kt0h.jpg"
+                                    alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Mohito</a>
+                            </div>
+
+                            <div class="menu__card2">
+                                <img style="height:180px; width: 200px;" class="card__img" src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/vimdb/237283.jpg" alt="gam2">
+
+                                <a style="font-size: 20px; color: white;" href="#" class="card__title">Kompot</a>
+                            </div>
+
+
+
+                        </div>
+
+                </div>
+                </form>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </header>
+    <div class="footer">
+        <div style=" display: block;">
+            <h5><strong>CONTACTS</strong></h5>
+            <h6>+7 707 969 0162</h6>
+            <h6>+7 707 119 5717</h6>
+        </div>
+        <div style=" display: block;">
+            <h5><strong>HELP</strong></h5>
+            <h6>TERMS & CONDITIONS</h6>
+            <h6>PRIVACY POLICY</h6>
+            <h6>COOKIES</h6>
+            <h6>PAYMENT METHODS</h6>
+        </div>
+        <div style="margin-top: 20px; font-size: 30px; display: flex;">
+            <a href="#"><i class="fab fa-instagram insta"></i></a>
+            <a href="#"><i class="fab fa-facebook-f face"></i></a>
+            <a href="#"><i class="fab fa-twitter twit"></i></a>
+            <a href="#"><i class="fab fa-google gg"></i></a>
+        </div>
+    </div>
+
+</body>
+<script src="menuFood.js"></script>
+
+</html>

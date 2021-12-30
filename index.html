@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monroe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="video">
+        <video class="video__media" src="/Images/snowfall.mp4" autoplay muted loop></video>
+    </div>
+    <div id="main">
+        <div class="header">
+            <a href="/index.html">
+                <img id="monroe" src="Images/monroe.png" width="200px" height="65px" alt="">
+            </a>
+
+            <div onclick="clickBurger()" class="section">
+                <a href="#" class="menu-btn">
+                    <span class="stick"></span>
+                </a>
+            </div>
+        </div>
+        <nav role='navigation'>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a style="text-decoration: none;">
+                        <li onclick="premiers()" onmouseover="onhover1()" onmouseout="nohover1()">Premiers</li>
+                        <span id="stick1"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Food/menuFood.html">
+                        <li onmouseover="onhover2()" onmouseout="nohover2()">Eat & Drink</li>
+                        <span id="stick2"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Rules/index.html">
+                        <li onmouseover="onhover3()" onmouseout="nohover3()">Rules</li>
+                        <span id="stick3"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/AboutUs/index.html">
+                        <li onmouseover="onhover4()" onmouseout="nohover4()">About us</li>
+                        <span id="stick4"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Login/index.html">
+                        <li>
+                            <p class="fas fa-user-alt"></p> Login
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <ul style="z-index: 1;" class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <div style="width: 100%;" class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Images/christmas1.png" width="100%" height="80%" alt="Los Angeles">
+            </div>
+            <div class="carousel-item">
+                <img src="/Images/ghostbusters.jpg" alt="Chicago" width="100%" height="80%">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images5.alphacoders.com/116/thumb-1920-1163756.jpg" alt="New York" width="100%" height="80%">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <i style="font-size: 60px; background-color: rgb(37, 37, 37); padding-left:15px; padding-right: 15px; border-radius:50%;" class="fas fa-angle-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <i style="font-size: 60px; background-color: rgb(37, 37, 37); padding-left:15px; padding-right: 15px; border-radius:50%;" class="fas fa-angle-right"></i>
+        </a>
+    </div>
+    <div class="films">
+        <div class="film first">
+            <span class="top_side"></span>
+            <span class="right_side"></span>
+            <span class="left_side"></span>
+            <div class="session">
+                <div class="d-block">
+                    <p style="font-family: sans-serif; color: white; margin:0;">Soider Man: No Way Home</p>
+                    <p style="border-radius: 10px; background-color:rgb(8, 163, 104); width: 50px; text-align: center; color: white; margin: 10px 70px;">9.5 <i class="fa fa-star"></i></p>
+                    <a class="link_session" href="SpiderMan/index.html">Sessions</a>
+                </div>
+
+            </div>
+            <span class="bottom_side"></span>
+        </div>
+        <div class="film second">
+            <span class="top_side"></span>
+            <span class="right_side"></span>
+            <span class="left_side"></span>
+            <div class="session">
+                <div class="d-block" style="text-align: center;">
+                    <p style="font-family: sans-serif; color: white; margin:0;">Ghostbusters: Afterlife</p>
+                    <p style="border-radius: 10px; background-color:rgb(8, 163, 104); width: 50px; text-align: center; color: white; margin: 10px 70px;">8.2 <i class="fa fa-star"></i></p>
+                    <a class="link_session" href="Ghostbusters/index.html">Sessions</a>
+                </div>
+
+            </div>
+            <span class="bottom_side"></span>
+        </div>
+        <div class="film third">
+            <span class="top_side"></span>
+            <span class="right_side"></span>
+            <span class="left_side"></span>
+            <div class="session">
+                <div class="d-block" style="text-align: center;">
+                    <p style="font-family: sans-serif; color: white; margin:0;">House Of Gucci</p>
+                    <p style="border-radius: 10px; background-color:rgb(8, 163, 104); width: 50px; text-align: center; color: white; margin: 10px 70px;">7.8 <i class="fa fa-star"></i></p>
+                    <a class="link_session" href="HouseOfGucci/index.html">Sessions</a>
+                </div>
+            </div>
+            <span class="bottom_side"></span>
+        </div>
+        <div class="film fourth">
+            <span class="top_side"></span>
+            <span class="right_side"></span>
+            <span class="left_side"></span>
+            <div class="session">
+                <div class="d-block" style="text-align: center;">
+                    <p style="font-family: sans-serif; color: white; margin:0;">King Richard</p>
+                    <p style="border-radius: 10px; background-color:rgb(8, 163, 104); width: 50px; text-align: center; color: white; margin: 10px 70px;">9.2 <i class="fa fa-star"></i></p>
+                    <a class="link_session" href="KingRichard/index.html">Sessions</a>
+                </div>
+            </div>
+            <span class="bottom_side"></span>
+        </div>
+        <div class="film fives">
+            <span class="top_side"></span>
+            <span class="right_side"></span>
+            <span class="left_side"></span>
+            <div class="session">
+                <div class="d-block" style="text-align: center;">
+                    <p style="font-family: sans-serif; color: white; margin:0;">Clifford: The Big Red Dog</p>
+                    <p style="border-radius: 10px; background-color:rgb(8, 163, 104); width: 50px; text-align: center; color: white; margin: 10px 70px;">7.1 <i class="fa fa-star"></i></p>
+                    <a class="link_session" href="Clifford/index.html">Sessions</a>
+                </div>
+            </div>
+            <span class="bottom_side"></span>
+        </div>
+        <div class="film sixes">
+            <span class="top_side"></span>
+            <span class="right_side"></span>
+            <span class="left_side"></span>
+            <div class="session">
+                <div class="d-block" style="text-align: center;">
+                    <p style="font-family: sans-serif; color: white; margin:0;">Matrix: Resurrections</p>
+                    <p style="border-radius: 10px; background-color:rgb(8, 163, 104); width: 50px; text-align: center; color: white; margin: 10px 70px;">8.6 <i class="fa fa-star"></i></p>
+                    <a class="link_session" href="Matrix/index.html">Sessions</a>
+                </div>
+            </div>
+            <span class="bottom_side"></span>
+        </div>
+        <div class="film sevens">
+            <span class="top_side"></span>
+            <span class="right_side"></span>
+            <span class="left_side"></span>
+            <div class="session">
+                <div class="d-block" style="text-align: center;">
+                    <p style="font-family: sans-serif; color: white; margin:0;">Resident Evil: Raccoon City</p>
+                    <p style="border-radius: 10px; background-color:rgb(8, 163, 104); width: 50px; text-align: center; color: white; margin: 10px 70px;">8.4 <i class="fa fa-star"></i></p>
+                    <a class="link_session" href="RE/index.html">Sessions</a>
+                </div>
+            </div>
+            <span class="bottom_side"></span>
+        </div>
+        <div class="film eights">
+            <span class="top_side"></span>
+            <span class="right_side"></span>
+            <span class="left_side"></span>
+            <div class="session">
+                <div class="d-block" style="text-align: center;">
+                    <p style="font-family: sans-serif; color: white; margin:0;">Eternals</p>
+                    <p style="border-radius: 10px; background-color:rgb(8, 163, 104); width: 50px; text-align: center; color: white; margin: 10px 70px;">8.7 <i class="fa fa-star"></i></p>
+                    <a class="link_session" href="Eternals/index.html">Sessions</a>
+                </div>
+            </div>
+            <span class="bottom_side"></span>
+        </div>
+    </div>
+    <div class="footer">
+        <div style="margin-top: 20px;" class="texts d-block">
+            <h5><strong>CONTACTS</strong></h5>
+            <h6>+7 707 969 0162</h6>
+            <h6>+7 707 119 5717</h6>
+        </div>
+        <div style="margin-top: 20px;" class="d-block">
+            <h5><strong>HELP</strong></h5>
+            <h6>TERMS & CONDITIONS</h6>
+            <h6>PRIVACY POLICY</h6>
+            <h6>COOKIES</h6>
+            <h6>PAYMENT METHODS</h6>
+        </div>
+        <div style="margin-top: 20px; font-size: 30px;" class="d-flex">
+            <a href="#"><i class="fab fa-instagram insta"></i></a>
+            <a href="#"><i class="fab fa-facebook-f face"></i></a>
+            <a href="#"><i class="fab fa-twitter twit"></i></a>
+            <a href="#"><i class="fab fa-google gg"></i></a>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

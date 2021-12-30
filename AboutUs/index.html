@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <a href="/index.html">
+                <img id="monroe" src="/Images/monroe.png" width="200px" height="65px" alt="">
+            </a>
+            <div onclick="clickBurger()" class="section">
+                <a href="#" class="menu-btn">
+                    <span class="stick"></span>
+                </a>
+            </div>
+        </div>
+        <nav role='navigation'>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a style="text-decoration: none;" href="/index.html">
+                        <li onmouseover="onhover1()" onmouseout="nohover1()">Premiers</li>
+                        <span id="stick1"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Food/menuFood.html">
+                        <li onmouseover="onhover2()" onmouseout="nohover2()">Eat & Drink</li>
+                        <span id="stick2"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Rules/index.html">
+                        <li onmouseover="onhover3()" onmouseout="nohover3()">Rules</li>
+                        <span id="stick3"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/AboutUs/index.html">
+                        <li onmouseover="onhover4()" onmouseout="nohover4()">About us</li>
+                        <span id="stick4"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Login/index.html">
+                        <li>
+                            <p class="fas fa-user-alt"></p> Login
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div style="flex-wrap: wrap; display:flex;">
+        <div class="text">
+        <h1>How MONROE viewers feel when they watch movie premieres in our cinemas?</h1>
+        <br>
+        <br>
+        <h5><strong style="color: rgb(255, 196, 0);">FLOOR IMMERSION</strong> in film provided by advanced film screening equipment. MONROE cinema halls are equipped with Christie cinema projectors, Dolby Atmos sound system, QSC acoustics and Master Image
+            Horizon 3D system.</h5>
+        <br>
+        <h5>Also, our guests appreciate the highest <strong style="color: rgb(255, 196, 0);">SERVICE</strong>. Tickets for the session can be purchased without commission, avoiding queues at the ticket office, on the cdm.kz cinema website, as well as through
+            the SmartPlaza mobile application, being able to accumulate bonuses from purchases and then pay with the received bonuses. While watching the movie, guests can drop off their outerwear in the cloakroom, use soft blankets and charge their phones
+            with our portable chargers.</h5>
+        <br>
+        <h5>The most sophisticated cinema viewers, who value not only the highest comfort, but also the <strong style="color: rgb(255, 196, 0);">VIBE</strong> of increased comfort, choose the MONROE VIP-halls. The VIP-hall in Almaty, designed for 20 people,
+            is equipped with electric chairs and covered with Alcantara leather. Using special tablets, guests can order food from restaurants to the cinema right during the movie show.</h5>
+        <br>
+        <h5>Another indisputable advantage of our cinema network is the unique <strong style="color: rgb(255, 196, 0);">TASTE</strong> of popcorn that we prepare according to a special recipe. We call it "the taste of cinema" and we are constantly expanding
+            the bar's range of flavors.</h5>
+    </div>
+    <div id="rights">
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58621.616034514926!2d76.68783170618528!3d43.20946860787526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38834f7675d8a6c3%3A0x7b7d14aec270c056!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQodGD0LvQtdC50LzQsNC9INCU0LXQvNC40YDQtdC70Y8!5e0!3m2!1sru!2skz!4v1640202085243!5m2!1sru!2skz"
+            loading="lazy"></iframe>
+        </div>
+        <div class="spons">
+            <img src="Images/dolby.png" width="30%" height="30%" alt="">
+            <img src="Images/arri.png" width="30%"height="30%" alt="">
+            <img style="transform: translateY(-20%);" src="Images/netflix.png" width="30%"height="30%" alt="">
+            <img src="Images/sony.png" width="30%"height="30%" alt="">
+        </div>
+    </div>
+    </div>
+    
+    <div class="footer">
+        <div style="margin-top: 20px;" class="d-block">
+            <h5><strong>CONTACTS</strong></h5>
+            <h6>+7 707 969 0162</h6>
+            <h6>+7 707 119 5717</h6>
+        </div>
+        <div style="margin-top: 20px;" class="d-block">
+            <h5><strong>HELP</strong></h5>
+            <h6>TERMS & CONDITIONS</h6>
+            <h6>PRIVACY POLICY</h6>
+            <h6>COOKIES</h6>
+            <h6>PAYMENT METHODS</h6>
+        </div>
+        <div style="margin-top: 20px; font-size: 30px;" class="d-flex">
+            <a href="#"><i class="fab fa-instagram insta"></i></a>
+            <a href="#"><i class="fab fa-facebook-f face"></i></a>
+            <a href="#"><i class="fab fa-twitter twit"></i></a>
+            <a href="#"><i class="fab fa-google gg"></i></a>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

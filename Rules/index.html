@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RULES</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gravitas+One&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <a href="/index.html">
+                <img id="monroe" src="/Images/monroe.png" width="200px" height="65px" alt="">
+            </a>
+
+            <div onclick="clickBurger()" class="section">
+                <a href="#" class="menu-btn">
+                    <span class="stick"></span>
+                </a>
+            </div>
+        </div>
+        <nav role='navigation'>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a style="text-decoration: none;" href="/index.html">
+                        <li onmouseover="onhover1()" onmouseout="nohover1()">Premiers</li>
+                        <span id="stick1"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Food/menuFood.html">
+                        <li onmouseover="onhover2()" onmouseout="nohover2()">Eat & Drink</li>
+                        <span id="stick2"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/Rules/index.html">
+                        <li onmouseover="onhover3()" onmouseout="nohover3()">Rules</li>
+                        <span id="stick3"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="/AboutUs/index.html">
+                        <li onmouseover="onhover4()" onmouseout="nohover4()">About us</li>
+                        <span id="stick4"></span>       
+                    </a>
+                    <a style="text-decoration: none;" href="/Login/index.html">
+                        <li>
+                            <p class="fas fa-user-alt"></p> Login
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="rulles">
+            <h1><strong>Rules for visiting the chain of cinemas</strong><strong style="color:red ;
+                font-family: 'Oswald', sans-serif; font-size: 60px; font-weight: bolder;">"Monroe Cinema"</strong></h1>
+        </div>
+        <div class="rulles_2">
+            <ol>
+                <li>The cinema ticket office opens <strong style="color: red;">15</strong> minutes before the start of the first session and closes <strong style="color: red;">15</strong> minutes after the start of the last session</li>
+                <li>Purchased tickets are valid strictly during the hours and days indicated on the ticket</li>
+                <li>To purchase a student or school card, you must present the appropriate document</li>
+                <li>When entering the cinemas, the guest must present a ticket, as well as a student card or a certificate from the school</li>
+                <li>3D glasses designed for watching RealD 3D movies</li>
+                <li>The following ticket categories are valid in the cinema:</li>
+            </ol>
+            <ul>
+                <li>Child ticket - for children from 5 to 15 years old inclusive</li>
+                <li>Children over the age of 12, in order to purchase a child ticket, must have a school certificate or birth certificate with them.</li>
+                <li>Student ID - for guests holding a registered, valid student ID</li>
+                <li>Adult - for guests aged 16 and over</li>
+                <li>The administration of the cinema has the right to partially or completely change or cancel the actions of some categories of tickets</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div style="margin-top: 20px;" class="d-block">
+            <h5><strong>CONTACTS</strong></h5>
+            <h6>+7 707 969 0162</h6>
+            <h6>+7 707 119 5717</h6>
+        </div>
+        <div style="margin-top: 20px;" class="d-block">
+            <h5><strong>HELP</strong></h5>
+            <h6>TERMS & CONDITIONS</h6>
+            <h6>PRIVACY POLICY</h6>
+            <h6>COOKIES</h6>
+            <h6>PAYMENT METHODS</h6>
+        </div>
+        <div style="margin-top: 20px; font-size: 30px;" class="d-flex">
+            <a href="#"><i class="fab fa-instagram insta"></i></a>
+            <a href="#"><i class="fab fa-facebook-f face"></i></a>
+            <a href="#"><i class="fab fa-twitter twit"></i></a>
+            <a href="#"><i class="fab fa-google gg"></i></a>
+        </div>
+    </div>
+</body>
+<script src="css/javascript.js"></script>
+
+</html>
